@@ -1,0 +1,360 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    width: 100%;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 150px;
+    background: url(../images/vintage-concrete.png);
+}
+
+.row {
+    margin: 0;
+}
+
+
+#loading {
+  position: fixed; 
+  display: none;   
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  background-image: url('../images/25.gif'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+/* Header - Jumbotron Section */
+.header {
+    margin-bottom: 0;
+    background-image: url("../images/beach.gif");
+    /* backdrop-filter: blur(13px); */
+    /* Full height */
+    height: 300px; 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 2px solid rgba(148, 230, 217, .5);
+    border-left: 2px solid rgba(148, 230, 217, .5);
+    border-right: 2px solid rgba(148, 230, 217, .5);
+    box-shadow: 8px 8px 5px slategray;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h1 {
+    font-family: 'Shrikhand';
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.title {
+    text-align: center;
+    z-index: 1;
+    /* margin-top: 1%; */
+}
+
+#the {
+    font-size: 26px;
+}
+
+/* Main content */
+.main-content,
+.top-banner {
+    background: rgba(242, 242, 242, .4);
+}
+
+.main-content {
+    padding-top: 20px;
+    background: rgba(242, 242, 242, .4);
+}
+/* Search Bar Section */
+/* Search panel */
+
+/* Weather display */
+.weather-display {
+    margin-bottom: 10px;
+    padding: 0;
+    background: url(../images/vintage-concrete.png);
+    color: rgb(12, 12, 12);
+    box-shadow: 3px 3px 5px slategray;
+}
+
+.weather {
+    display: flex;
+    text-align: center;
+    /* background-color: rgba(167, 192, 238, 0.76); */
+}
+
+.weather-style {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    font-family: 'Knewave';
+}
+
+.arvo {
+    font-family: 'Arvo';
+    font-weight: bold;
+}
+
+#current-temp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.days {
+    flex: 1;
+    /* border: rgb(99, 99, 99) solid .5px; */
+}
+/* --------- */
+.search-panel {
+    min-height: 130px;
+}
+
+#location {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.location-form {
+    margin-bottom: 10px;
+}
+
+
+/* Image Display Panel */
+/* Tabs */
+
+#resultsTable:hover {
+    cursor: pointer;
+}
+
+#listing,
+#resultsTable {
+    width: 100%;
+}
+
+#exTab1, #contentTabs {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+#exTab1 {
+    width: 100%;
+    height: 100%;
+}
+
+.round-edges {
+    border-radius: 5px;
+    border: solid 1px rgba(35, 188, 235, 0.5);
+}
+
+.bg-color {
+    background-color: rgba(148, 230, 217, .5);
+}
+
+.highlight {
+    background-color: rgba(148, 230, 217, 1);
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.highlight:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.highlight:focus {
+    background-color: rgba(10, 222, 188, 1);
+}
+
+.btn-link {
+    color: rgb(8, 112, 153);
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* ------ */
+
+.tab-content {
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+#hotelAccordion,
+#RestaurantsAccordion,
+#poiAccordion {
+    max-height: 700px;
+    font-family: 'Poppins';
+}
+
+.poi-btn {
+    background-color: rgba(50, 190, 255, .7);
+    border: 1px solid rgb(50, 190, 255);
+    color: white;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.poi-btn:hover {
+    color: white;
+}
+
+.tab-pane {
+    width: 100%;
+}
+
+#fun-fact {
+    padding: 30px 10px;
+}
+
+/* Location Info */
+.info-panel {
+    min-height: 250px;
+}
+
+.location-info {
+    z-index: -1;
+}
+
+.bottom-right {
+    padding: 0;
+}
+
+/* Map styles */
+#map {
+  min-height: 300px;
+  width: 100%;
+}
+
+.map {
+    padding: 0 5px;
+    /* height: 100%; */
+    /* max-height: 300px; */
+}
+
+.map-display {
+    background-color: lightgrey;
+    border: 1px solid gray;
+}
+
+#contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    height: 150px;
+    background: linear-gradient(rgb(8, 112, 153) 60%, white);
+    bottom: -150px;
+    width: 100%;
+    position: absolute;
+}
+
+#copyright {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.devs {
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.devs p {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#terminator {
+    font-family: 'Gaegu';
+    text-align: right;
+}
+/* styling for dynamic images in accordion */
+/* .box-form {
+    display: flex;
+} */
+
+.resImg {
+    max-width: 250px;
+    max-height: 250px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Overwrites bootstrap css */
+.card {
+    background: rgba(0, 0, 0, 0);
+}
+/* the .nav links to prevent overflow from container */
+.nav-link {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Overwrites bootstrap css */
+.card,
+.list-group-item {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* .list-group {
+    float: right;
+} */
+
+/* @media screen and (min-height: 424px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-height: 425px) {
+    .display-4 {
+        font-size: 3.5rem;
+    }
+} */
+
+/* @media screen and (min-height: 700px) {
+    .tab-content {
+        height: 200px;
+    }
+}
+
+@media screen and (min-height: 850px) {
+    .tab-content {
+        height: 250px;
+    }
+} 
+
+@media screen and (min-height: 900px) {
+    .tab-content {
+        height: 350px;
+    }
+} */
